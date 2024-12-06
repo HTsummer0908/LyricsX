@@ -2,7 +2,7 @@
 "Download" = "Tải về";
 
 /* No comment provided by engineer. */
-"Font Fallback: %@" = "Phông chữ dự phòng: %@";
+"Font Fallback: %@" = "%@Phông chữ dự phòng: %@";
 
 /* No comment provided by engineer. */
 "OK" = "OK";
