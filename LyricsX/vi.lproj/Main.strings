@@ -2,7 +2,7 @@
 "1xI-G4-Fsc.headerCell.title" = "Nguồn";
 
 /* Class = "NSTextFieldCell"; title = "No Lyrics\n\nDrag & Drop to import LRC file"; ObjectID = "aRw-yQ-GNX"; */
-"aRw-yQ-GNX.title" = "Kéo & thả để nhập tệp LRC";
+"aRw-yQ-GNX.title" = "Lời bài hát\n\nKéo & thả để nhập tệp LRC";
 
 /* Class = "NSWindow"; title = "Donate"; ObjectID = "CW0-AL-Z6N"; */
 "CW0-AL-Z6N.title" = "Ủng hộ";
