@@ -1,5 +1,5 @@
 /* Class = "NSTableColumn"; headerCell.title = "Source"; ObjectID = "1xI-G4-Fsc"; */
-"1xI-G4-Fsc.headerCell.title" = "Nguồn";
+"1xI-G4-Fsc.headerCell.title" = "Source";
 
 /* Class = "NSTextFieldCell"; title = "No Lyrics\n\nDrag & Drop to import LRC file"; ObjectID = "aRw-yQ-GNX"; */
 "aRw-yQ-GNX.title" = "Lời bài hát\n\nKéo & thả để nhập tệp LRC";
