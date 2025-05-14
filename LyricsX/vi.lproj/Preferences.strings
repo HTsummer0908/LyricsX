@@ -59,10 +59,10 @@
 "cBB-zn-Hdh.title" = "Ưu tiên lời bài hát song ngữ";
 
 /* Class = "NSTextFieldCell"; title = "Font:"; ObjectID = "Cmt-it-PXW"; */
-"Cmt-it-PXW.title" = "Phông chữ:";
+"Cmt-it-PXW.title" = "Font:";
 
 /* Class = "NSViewController"; title = "General"; ObjectID = "d5d-dC-DK4"; */
-"d5d-dC-DK4.title" = "Chung";
+"d5d-dC-DK4.title" = "General";
 
 /* Class = "NSButtonCell"; title = "Load lyrics beside music file"; ObjectID = "EDv-ax-0hI"; */
 "EDv-ax-0hI.title" = "Tải lời bái hát theo tệp";
