@@ -1,0 +1,46 @@
+name: Build LyricsX
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build and Archive
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
+
+    - name: Install Carthage
+      run: brew install carthage
+
+    - name: Bootstrap Carthage
+      run: carthage bootstrap --platform macOS --use-xcframeworks --no-use-binaries --cache-builds
+
+    - name: Build App
+      run: |
+        xcodebuild -project LyricsX.xcodeproj \
+          -scheme LyricsX \
+          -configuration Release \
+          -derivedDataPath build \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGNING_ALLOWED=NO
+
+    - name: Archive App
+      run: |
+        cd build/Build/Products/Release
+        zip -r LyricsX.app.zip LyricsX.app
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: LyricsX-App
+        path: build/Build/Products/Release/LyricsX.app.zip

@@ -107,6 +107,16 @@ class KaraokeLabel: NSTextField {
         return ctFrame
     }
     
+    override func setFrameSize(_ newSize: NSSize) {
+        let oldSize = frame.size
+        super.setFrameSize(newSize)
+        if newSize != oldSize {
+            _ctFrame = nil
+            needsDisplay = true
+            removeProgressAnimation()
+        }
+    }
+    
     override var intrinsicContentSize: NSSize {
         let progression: CTFrameProgression = isVertical ? .rightToLeft : .topToBottom
         let frameAttr: [CTFrame.AttributeKey: Any] = [.progression: progression.rawValue as NSNumber]
